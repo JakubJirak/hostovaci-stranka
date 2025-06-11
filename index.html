@@ -1,11 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jakub Jirak - Student Programování</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>GITHUB HOSTING</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h3>JJ</h3>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Domů</a>
+                <a href="#about">O mně</a>
+                <a href="#skills">Dovednosti</a>
+                <a href="#projects">Projekty</a>
+                <a href="#contact">Kontakt</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Přepnout motiv">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">Jakub Jirák</h1>
+                <p class="hero-subtitle animate-fade-in-delay-1">Student Programování</p>
+                <p class="hero-description animate-fade-in-delay-2">
+                    Vítejte na mém portfoliu! Jsem nadšený student programování specializující se na moderní webové technologie.
+                </p>
+                <div class="hero-buttons animate-fade-in-delay-3">
+                    <a href="#contact" class="btn btn--primary">Kontaktovat</a>
+                    <a href="#projects" class="btn btn--outline">Moje Projekty</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">O mně</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Jsem student programování se zaměřením na moderní webové technologie. 
+                        Specializuji se na frontend development pomocí JavaScript, React a TypeScript, 
+                        zároveň se učím backend development s Java a prací s SQL databázemi.
+                    </p>
+                    <p>
+                        Mým cílem je stát se plnohodnotným full-stack vývojářem a tvořit aplikace, 
+                        které přináší reálnou hodnotu uživatelům. Neustále se vzdělávám v nejnovějších 
+                        technologiích a rád experimentuji s novými přístupy k vývoju softwaru.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title">Technologie a Dovednosti</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🟨</div>
+                    <h3>JavaScript</h3>
+                    <p>Moderní ES6+ JavaScript pro interaktivní webové aplikace</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>Vývoj komponentových uživatelských rozhraní</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                    <span class="skill-level">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔷</div>
+                    <h3>TypeScript</h3>
+                    <p>Typově bezpečný JavaScript pro větší projekty</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                    <span class="skill-level">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>SQL Databáze</h3>
+                    <p>Návrh a správa relačních databází</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                    <span class="skill-level">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☕</div>
+                    <h3>Java</h3>
+                    <p>Objektově orientované programování - momentálně se učím</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="60"></div>
+                    </div>
+                    <span class="skill-level">60%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>HTML/CSS</h3>
+                    <p>Moderní webové standardy a responsive design</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <span class="skill-level">90%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">Moje Projekty</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Dashboard React App</h3>
+                        <span class="status status--success">Dokončeno</span>
+                    </div>
+                    <p>Responzivní dashboard stránka s propojení v databázi pomocí express.js a Drizzle ORM</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Weather Dashboard</h3>
+                        <span class="status status--success">Dokončeno</span>
+                    </div>
+                    <p>Interaktivní dashboard počasí využívající externí API a moderní JavaScript.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Personal Portfolio</h3>
+                        <span class="status status--success">Dokončeno</span>
+                    </div>
+                    <p>Responzivní osobní portfolio s dark/light mode a smooth animacemi.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Spojte se se mnou</h3>
+                    <p>Máte zajímavý projekt nebo příležitost? Rád si s vámi promluvím!</p>
+                    <div class="contact-links">
+                        <a href="mailto:jakub.jirak@email.cz" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            jakub.jirak12@seznam.cz
+                        </a>
+                        <a href="https://github.com/jakubjirak" target="_blank" class="contact-link">
+                            <span class="contact-icon">💻</span>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Jméno</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Zpráva</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Odeslat zprávu</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jakub Jirak. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
