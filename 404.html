@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>404 - Stránka nenalezena | Jakub Jirak</title>
+    <meta name="description" content="Stránka nebyla nalezena - Jakub Jirak, Student Programování">
+    <link rel="stylesheet" href="404style.css">
 </head>
-<body>
-    <h1>404 niga</h1>
+<body data-color-scheme="light">
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <span class="logo-text">Jakub Jirak</span>
+                    <span class="logo-subtitle">Student Programování</span>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Přepnout mezi světlým a tmavým režimem">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="error-page">
+                <div class="error-page__content">
+                    <div class="error-number" aria-hidden="true">
+                        <span class="error-number__digit">4</span>
+                        <span class="error-number__digit">0</span>
+                        <span class="error-number__digit">4</span>
+                    </div>
+                    
+                    <div class="error-content">
+                        <h1 class="error-title">Stránka nenalezena</h1>
+                        <p class="error-description">
+                            Omlouváme se, ale stránka kterou hledáte neexistuje. 
+                            Možná byla přesunuta nebo odstraněna.
+                        </p>
+                        
+                        <div class="error-actions">
+                            <a href="/" class="btn btn--primary btn--lg error-btn">
+                                <span class="btn__icon">←</span>
+                                Zpět na hlavní stránku
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="error-illustration" aria-hidden="true">
+                    <div class="floating-shapes">
+                        <div class="shape shape--circle"></div>
+                        <div class="shape shape--square"></div>
+                        <div class="shape shape--triangle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">
+                    © 2025 Jakub Jirak - Student Programování
+                </p>
+                <div class="footer__skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Java</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="404page.js"></script>
 </body>
 </html>
